@@ -52,6 +52,20 @@ body {
   }
 }
 
+#tft-navbar {
+  .ehay-logo {
+    height: 29px;
+  }
+
+  li {
+    margin-right: 39px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 @media (min-width: 1200px) {
   #navbar-items li {
     opacity: 1 !important;
