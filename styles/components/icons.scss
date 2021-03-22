@@ -1,0 +1,73 @@
+.rounded-icon,
+.rounded-icon-success,
+.rounded-icon-primary,
+.rounded-icon-grey,
+.rounded-icon-primary-white {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
+  transition: background-color .1s;
+}
+
+.rounded-icon {
+  min-width: 35px;
+  height: 35px;
+  background-color: $primary;
+  color: $white;
+  box-shadow: 0 10px 15px 0 rgba(21, 37, 71, 0.15);
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: translate(-7.5px, -7.5px);
+    width: 50px;
+    height: 50px;
+    border: 1px solid $primary-light;
+  }
+}
+
+.rounded-icon-success {
+  min-width: 25px;
+  height: 25px;
+  background-color: $success-light;
+  color: $success;
+  font-size: 11px;
+  padding-top: 2px;
+}
+
+.rounded-icon-primary {
+  width: 50px;
+  height: 50px;
+  background-color: $primary-light;
+  color: $primary;
+  font-size: 16px;
+  padding-top: 2px;
+}
+
+.rounded-icon-grey {
+  width: 45px;
+  height: 45px;
+  background-color: $grey-light-light;
+  color: $grey;
+  font-size: 18px;
+  padding-top: 2px;
+
+  &:hover, &:focus {
+    background-color: $grey-light;
+  }
+}
+
+.rounded-icon-primary-white {
+  width: 55px;
+  height: 55px;
+  background-color: $primary;
+  color: $white;
+  font-size: 22px;
+  padding-top: 2px;
+}

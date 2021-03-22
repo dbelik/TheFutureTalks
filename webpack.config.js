@@ -14,6 +14,13 @@ module.exports = {
   mode: mode,
   target: target,
 
+  resolve: {
+    alias: {
+      scripts: path.resolve(__dirname, "./src"),
+      styles: path.resolve(__dirname, "./styles"),
+    },
+  },
+
   entry: {
     home: "./src/home.js",
   },
@@ -30,7 +37,12 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "resolve-url-loader", "sass-loader",],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "resolve-url-loader",
+          "sass-loader",
+        ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
@@ -38,11 +50,11 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
-        type: 'asset',
+        type: "asset",
       },
       {
         test: /\.html$/,
-        loader: 'html-loader'
+        loader: "html-loader",
       },
     ],
   },
@@ -50,13 +62,13 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, dist),
     compress: true,
-    host: '0.0.0.0',
+    host: "0.0.0.0",
     port: 3000,
   },
 
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin({ template: './pages/home.html' }),
-    new MiniCssExtractPlugin({})
+    new HtmlWebpackPlugin({ template: "./pages/home.html" }),
+    new MiniCssExtractPlugin({}),
   ],
 };
