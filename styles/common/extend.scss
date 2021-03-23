@@ -72,6 +72,10 @@ blockquote.quote {
   border: none;
 }
 
+.text-success {
+  color: $success;
+}
+
 @media (max-width: 767px) {
   .text-big {
     font-size: 2rem;
