@@ -124,7 +124,7 @@
       <p>Steve Jobs, Apple</p>
     </section>
 
-    <section id="talks-section">
+    <section id="talks-section" class="footer-bg">
       <div class="content-container" id="talks-section_speakers">
         <p class="success-message">SPEAKERS</p>
         <h2>TheFutureTalks Speakers</h2>
@@ -267,7 +267,9 @@
           class="row justify-content-center"
         >
           <div class="col">
-            <div class="h-100 w-100 rounded-md box-shadow-md d-flex flex-column justify-content-between align-items-start">
+            <div
+              class="h-100 w-100 rounded-md box-shadow-md d-flex flex-column justify-content-between align-items-start"
+            >
               <div>
                 <img src="/assets/imgs/icons/tent.svg" alt="Tent" />
                 <h3>Conference 2019</h3>
@@ -282,7 +284,9 @@
             </div>
           </div>
           <div class="col">
-            <div class="h-100 w-100 rounded-md box-shadow-md position-relative d-flex flex-column justify-content-between align-items-start">
+            <div
+              class="h-100 w-100 rounded-md box-shadow-md position-relative d-flex flex-column justify-content-between align-items-start"
+            >
               <div>
                 <img src="/assets/imgs/icons/rocket.svg" alt="Rocket" />
                 <p class="danger-message">LIMITED SEATS</p>
@@ -302,74 +306,82 @@
       </div>
     </section>
 
-    <footer>
-      <div>
-        <div>
-          <img src="/assets/imgs/icons/logo-white.svg" alt="Ehay" />
-          <p>Build a modern and creative website with crealand</p>
-          <ul>
+    <footer id="tft-footer">
+      <div class="content-container row">
+        <div class="col-3">
+          <img
+            class="mb-4"
+            src="/assets/imgs/icons/logo-white.svg"
+            alt="Ehay"
+          />
+          <p class="p2">Build a modern and creative website with crealand</p>
+          <ul class="d-flex list-style-none mt-4">
             <li>
-              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-google"></i></a>
             </li>
-            <li>
+            <li class="ml-4">
               <a href=""><i class="fab fa-twitter"></i></a>
             </li>
-            <li>
+            <li class="ml-4">
               <a href=""><i class="fab fa-instagram"></i></a>
             </li>
-            <li>
+            <li class="ml-4">
               <a href=""><i class="fab fa-linkedin"></i></a>
             </li>
-            <li>
+            <li class="ml-4">
               <a href=""><i class="fab fa-youtube"></i></a>
             </li>
           </ul>
         </div>
 
-        <ul>
-          <li>
-            <h5>Product</h5>
-            <ul>
-              <li><a href="/">Landingpage</a></li>
-              <li><a href="/">Features</a></li>
-              <li><a href="/">Documentation</a></li>
-              <li><a href="/">Referral Program</a></li>
-              <li><a href="/">Pricing</a></li>
-            </ul>
-          </li>
-          <li>
-            <h5>Services</h5>
-            <ul>
-              <li><a href="/">Documentation</a></li>
-              <li><a href="/">Design</a></li>
-              <li><a href="/">Themes</a></li>
-              <li><a href="/">Illustrations</a></li>
-              <li><a href="/">UI Kit</a></li>
-            </ul>
-          </li>
-          <li>
-            <h5>Company</h5>
-            <ul>
-              <li><a href="/">About</a></li>
-              <li><a href="/">Terms</a></li>
-              <li><a href="/">Privacy Policy</a></li>
-              <li><a href="/">Careers</a></li>
-            </ul>
-          </li>
-          <li>
-            <h5>More</h5>
-            <ul>
-              <li><a href="/">Documentation</a></li>
-              <li><a href="/">License</a></li>
-              <li><a href="/">Changelog</a></li>
-            </ul>
-          </li>
-        </ul>
+        <div class="col-9">
+          <ul class="row list-style-none">
+            <li class="col-3">
+              <h5 class="mb-4">Product</h5>
+              <ul class="list-style-none">
+                <li class="mb-4"><a href="/">Landingpage</a></li>
+                <li class="mb-4"><a href="/">Features</a></li>
+                <li class="mb-4"><a href="/">Documentation</a></li>
+                <li class="mb-4"><a href="/">Referral Program</a></li>
+                <li><a href="/">Pricing</a></li>
+              </ul>
+            </li>
+            <li class="col-3">
+              <h5 class="mb-4">Services</h5>
+              <ul class="list-style-none">
+                <li class="mb-4"><a href="/">Documentation</a></li>
+                <li class="mb-4"><a href="/">Design</a></li>
+                <li class="mb-4"><a href="/">Themes</a></li>
+                <li class="mb-4"><a href="/">Illustrations</a></li>
+                <li><a href="/">UI Kit</a></li>
+              </ul>
+            </li>
+            <li class="col-3">
+              <h5 class="mb-4">Company</h5>
+              <ul class="list-style-none">
+                <li class="mb-4"><a href="/">About</a></li>
+                <li class="mb-4"><a href="/">Terms</a></li>
+                <li class="mb-4"><a href="/">Privacy Policy</a></li>
+                <li><a href="/">Careers</a></li>
+              </ul>
+            </li>
+            <li class="col-3">
+              <h5 class="mb-4">More</h5>
+              <ul class="list-style-none">
+                <li class="mb-4"><a href="/">Documentation</a></li>
+                <li class="mb-4"><a href="/">License</a></li>
+                <li><a href="/">Changelog</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div>
-        <i class="fas fa-heart text-24"></i>
-        <p>Copyright © 2019. Crafted with love.</p>
+      <div id="tft-footer_copyright" class="content-container d-flex flex-column align-items-center pb-5">
+        <span class="mb-4 rounded-icon-primary-white"
+          ><i class="fas fa-heart text-24"></i
+        ></span>
+        <p class="mb-0 p2">Copyright © 2019. Crafted with love.</p>
       </div>
     </footer>
   </body>

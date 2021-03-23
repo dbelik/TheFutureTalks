@@ -1,0 +1,17 @@
+#tft-footer {
+  background-color: $black-footer;
+  padding-top: 132px;
+
+  a {
+    color: $grey;
+    font-weight: normal;
+  }
+
+  h5, p {
+    color: $grey-dark;
+  }
+
+  &_copyright {
+    margin-top: 82px;
+  }
+}
