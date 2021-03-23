@@ -54,13 +54,15 @@
   }
 
   > div {
-    height: 500px;
     color: $white;
 
+    &:nth-child(2) {
+      margin-top: 55px;
+    }
+
     > article {
-      max-height: 360px;
       max-width: 700px;
-      height: 100%;
+      height: 500px;
 
       > div {
         padding: 35px;
@@ -280,5 +282,66 @@
   #intro-section {
     background-position-x: 195%;
     background-size: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  #intro-section {
+    background: unset;
+
+    &_links > div {
+      &:last-child {
+        border-left: unset;
+      }
+    }
+  }
+
+  #sponsors-section {
+    margin-bottom: 34px;
+  }
+
+  #topics-section {
+    margin-top: 0;
+    padding-top: 64px;
+
+    > div > article {
+      height: 375px;
+      max-height: 375px;
+    }
+  }
+
+  #talks-section_speakers_list {
+    > div {
+      margin-top: 33px !important;
+      max-width: 300px;
+    }
+  }
+
+  #talks-section_archive {
+    margin-top: 50px;
+
+    &_video-container {
+      max-height: unset;
+      border-radius: 0;
+
+      video {
+        border-radius: 0;
+        width: 100%;
+      }
+    }
+
+    &_archiver-container {
+      border-radius: 0;
+      margin-top: 0;
+      box-shadow: unset;
+    }
+  }
+
+  #talks-section_event-tickets {
+    margin-top: 32px;
+
+    &_tickets-container > div {
+      height: 394px;
+    }
   }
 }
