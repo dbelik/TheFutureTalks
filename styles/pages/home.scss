@@ -88,7 +88,7 @@
 }
 
 #quote-section {
-  margin-top: 16px;
+  margin-top: 158px;
   max-width: 915px;
   margin-bottom: 135px;
 
@@ -310,6 +310,12 @@
     }
   }
 
+  #quote-section {
+    blockquote {
+      font-size: 1.75rem;
+    }
+  }
+
   #talks-section_speakers_list {
     > div {
       margin-top: 33px !important;
@@ -333,6 +339,9 @@
     &_archiver-container {
       border-radius: 0;
       margin-top: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 23px;
       box-shadow: unset;
     }
   }
@@ -343,5 +352,16 @@
     &_tickets-container > div {
       height: 394px;
     }
+  }
+
+  #tft-footer {
+    margin-top: -62px;
+  }
+}
+
+@media (max-width: 520px) {
+  #talks-section_archive_video-container {
+    width: 100vw;
+    margin-left: -15px;
   }
 }
