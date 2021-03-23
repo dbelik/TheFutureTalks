@@ -102,6 +102,7 @@
 
 #talks-section {
   background: url("/assets/imgs/common/footer-bg.svg") no-repeat center bottom, linear-gradient(to bottom, #f8fbff, #ffffff);
+  background-size: contain, cover;
 
   &_speakers {
     padding-top: 145px;
