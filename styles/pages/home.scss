@@ -18,11 +18,11 @@
     > div {
       width: auto;
       padding: 0 15px;
+      width: min-content;
     }
 
     > div:nth-child(1) {
       padding-left: 0;
-      width: min-content;
     }
 
     > div:nth-child(2) {
@@ -58,6 +58,8 @@
     color: $white;
 
     > article {
+      max-height: 360px;
+      max-width: 700px;
       height: 100%;
 
       > div {
@@ -84,7 +86,7 @@
 }
 
 #quote-section {
-  margin-top: 160px;
+  margin-top: 16px;
   max-width: 915px;
   margin-bottom: 135px;
 
@@ -101,8 +103,10 @@
 }
 
 #talks-section {
-  background: url("/assets/imgs/common/footer-bg.svg") no-repeat center bottom, linear-gradient(to bottom, #f8fbff, #ffffff);
-  background-size: contain, cover;
+  background: url("/assets/imgs/common/footer-bg.svg") no-repeat center,
+    linear-gradient(to bottom, #f8fbff, #ffffff);
+  background-size: 105%, cover;
+  background-position-y: 101%, center;
 
   &_speakers {
     padding-top: 145px;
@@ -211,5 +215,70 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1199px) {
+  #topics-section {
+    > div {
+      height: auto;
+
+      article {
+        height: 360px;
+      }
+    }
+  }
+
+  #quote-section {
+    margin-top: 88px;
+    margin-bottom: 91px;
+  }
+
+  #talks-section_speakers {
+    padding-top: 96px;
+  }
+
+  #talks-section_archive {
+    margin-top: 106px;
+
+    &_archiver-container {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: -46px;
+    }
+
+    &_video-container {
+      max-height: 467px;
+
+      video {
+        margin-top: 0;
+      }
+    }
+  }
+
+  #talks-section_event-tickets {
+    margin-top: 120px;
+
+    &_tickets-container > div {
+      max-width: 350px;
+
+      > div {
+        padding: 36px 35px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #intro-section {
+    background-position-x: 140%;
+  }
+}
+
+@media (max-width: 900px) {
+  #intro-section {
+    background-position-x: 195%;
+    background-size: 60%;
   }
 }

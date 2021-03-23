@@ -12,8 +12,36 @@
         class="content-container d-flex align-items-center justify-content-between"
       >
         <img class="ehay-logo" src="/assets/imgs/icons/logo.svg" alt="Ehay" />
+        <button class="d-block d-xl-none">
+          <svg width="30" height="24">
+            <line
+              x1="0"
+              x2="30"
+              y1="5"
+              y2="5"
+              stroke="#183b56"
+              stroke-width="2"
+            ></line>
+            <line
+              x1="0"
+              x2="30"
+              y1="12"
+              y2="12"
+              stroke="#183b56"
+              stroke-width="2"
+            ></line>
+            <line
+              x1="0"
+              x2="30"
+              y1="19"
+              y2="19"
+              stroke="#183b56"
+              stroke-width="2"
+            ></line>
+          </svg>
+        </button>
         <ul
-          class="d-flex align-items-center justify-content-end w-100 list-style-none m-0"
+          class="align-items-center justify-content-end w-100 list-style-none m-0 d-none d-xl-flex"
         >
           <li><a class="text-dark text-decoration-none" href="/">Home</a></li>
           <li>
@@ -32,7 +60,7 @@
     </nav>
 
     <section id="intro-section" class="content-container row">
-      <div class="col-6">
+      <div class="col-10 col-md-8 col-xl-6">
         <h1>TheFutureTalks Conference</h1>
         <p class="mb-4">
           Event madness gathering innovators, startups & tech enthusiasts in
@@ -53,7 +81,7 @@
             </p>
           </div>
           <div class="pr-2">
-            <a class="primary-border-button mb-4" href="/"
+            <a class="primary-border-button mb-4 text-nowrap" href="/"
               >Startup Awards <i class="fas fa-arrow-right ml-3"></i
             ></a>
             <i class="fas fa-check rounded-check-icon mb-2"></i>
@@ -71,11 +99,11 @@
       <div id="sponsors-section_sponsors"></div>
     </section>
 
-    <section id="topics-section" class="content-container">
+    <section id="topics-section" class="content-container content-container-md">
       <p class="success-message">OUR TOPICS</p>
       <h2>Conference Topics</h2>
       <div class="row">
-        <article class="col-4">
+        <article class="col-12 col-xl-4 mb-3 mb-xl-0">
           <div
             class="h-100 w-100 d-flex flex-column justify-content-end rounded-md"
           >
@@ -86,7 +114,7 @@
             ></a>
           </div>
         </article>
-        <article class="col-4">
+        <article class="col-12 col-xl-4 mb-3 mb-xl-0">
           <div
             class="h-100 w-100 d-flex flex-column justify-content-end rounded-md"
           >
@@ -97,7 +125,7 @@
             ></a>
           </div>
         </article>
-        <article class="col-4">
+        <article class="col-12 col-xl-4">
           <div
             class="h-100 w-100 d-flex flex-column justify-content-end rounded-md"
           >
@@ -113,7 +141,7 @@
       </div>
     </section>
 
-    <section id="quote-section" class="content-container">
+    <section id="quote-section" class="content-container content-container-md">
       <div id="quote-section_quote-symbol" class="text-primary">
         <i class="fas fa-quote-left"></i>
       </div>
@@ -125,11 +153,14 @@
     </section>
 
     <section id="talks-section" class="footer-bg">
-      <div class="content-container" id="talks-section_speakers">
+      <div
+        class="content-container content-container-md"
+        id="talks-section_speakers"
+      >
         <p class="success-message">SPEAKERS</p>
         <h2>TheFutureTalks Speakers</h2>
         <div id="talks-section_speakers_list" class="row">
-          <div class="col-3">
+          <div class="col-6 col-xl-3">
             <img
               class="rounded-sm"
               src="/assets/imgs/home/speakers/1.png"
@@ -141,7 +172,7 @@
               <li>Investor at Sebo Digital Ventures</li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-xl-3">
             <img
               class="rounded-sm"
               src="/assets/imgs/home/speakers/2.png"
@@ -153,7 +184,7 @@
               <li>Co-founder at Slack</li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-xl-3">
             <img
               class="rounded-sm"
               src="/assets/imgs/home/speakers/3.png"
@@ -165,7 +196,7 @@
               <li>Investor at Sebo Digital Ventures</li>
             </ul>
           </div>
-          <div class="col-3">
+          <div class="col-6 col-xl-3">
             <img
               class="rounded-sm"
               src="/assets/imgs/home/speakers/4.png"
@@ -181,11 +212,12 @@
       </div>
 
       <div
-        class="content-container position-relative"
+        class="content-container content-container-md position-relative"
         id="talks-section_archive"
       >
-        <div id="talks-section_archive_video-container" class="overflow-hidden">
+        <div id="talks-section_archive_video-container" class="overflow-hidden rounded-md">
           <video
+            class="rounded-md"
             poster="/assets/imgs/home/preview.png"
             src="/assets/videos/home/conference-video.mp4"
           ></video>
@@ -289,7 +321,7 @@
             >
               <div>
                 <img src="/assets/imgs/icons/rocket.svg" alt="Rocket" />
-                <p class="danger-message">LIMITED SEATS</p>
+                <p class="danger-message d-none d-xl-block">LIMITED SEATS</p>
                 <h3>Startup Awards</h3>
                 <p class="p2 mb-4">
                   Startup Awards is a series of events in the Indonesian
@@ -308,7 +340,7 @@
 
     <footer id="tft-footer">
       <div class="content-container row">
-        <div class="col-3">
+        <div class="col-xl-3 col-4">
           <img
             class="mb-4"
             src="/assets/imgs/icons/logo-white.svg"
@@ -334,9 +366,9 @@
           </ul>
         </div>
 
-        <div class="col-9">
+        <div class="col-xl-9 col-8">
           <ul class="row list-style-none">
-            <li class="col-3">
+            <li class="col-6 col-xl-3 mb-5 mb-xl-0">
               <h5 class="mb-4">Product</h5>
               <ul class="list-style-none">
                 <li class="mb-4"><a href="/">Landingpage</a></li>
@@ -346,7 +378,7 @@
                 <li><a href="/">Pricing</a></li>
               </ul>
             </li>
-            <li class="col-3">
+            <li class="col-6 col-xl-3 mb-5 mb-xl-0">
               <h5 class="mb-4">Services</h5>
               <ul class="list-style-none">
                 <li class="mb-4"><a href="/">Documentation</a></li>
@@ -356,7 +388,7 @@
                 <li><a href="/">UI Kit</a></li>
               </ul>
             </li>
-            <li class="col-3">
+            <li class="col-6 col-xl-3">
               <h5 class="mb-4">Company</h5>
               <ul class="list-style-none">
                 <li class="mb-4"><a href="/">About</a></li>
@@ -365,7 +397,7 @@
                 <li><a href="/">Careers</a></li>
               </ul>
             </li>
-            <li class="col-3">
+            <li class="col-6 col-xl-3">
               <h5 class="mb-4">More</h5>
               <ul class="list-style-none">
                 <li class="mb-4"><a href="/">Documentation</a></li>
@@ -377,7 +409,10 @@
         </div>
       </div>
 
-      <div id="tft-footer_copyright" class="content-container d-flex flex-column align-items-center pb-5">
+      <div
+        id="tft-footer_copyright"
+        class="content-container d-flex flex-column align-items-center pb-5"
+      >
         <span class="mb-4 rounded-icon-primary-white"
           ><i class="fas fa-heart text-24"></i
         ></span>

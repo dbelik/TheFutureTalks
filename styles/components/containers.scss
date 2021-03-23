@@ -1,15 +1,22 @@
-.content-container, .section-container {
-    margin: 0px auto;
-    height: 100%;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+.content-container,
+.section-container {
+  margin: 0px auto;
+  height: 100%;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .content-container {
-    max-width: 1170px;
+  max-width: 1170px;
 }
 
 .section-container {
-    max-width: 1500px;
+  max-width: 1500px;
+}
+
+@media (max-width: 1199px) {
+  .content-container-md {
+    max-width: 700px !important;
+  }
 }
