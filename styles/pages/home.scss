@@ -36,11 +36,10 @@
   margin-bottom: 125px;
   text-align: center;
 
-  &_sponsors {
-    width: 100%;
-    height: 80px;
-    background: url("/assets/imgs/home/sponsors.svg") center repeat-x;
-    background-size: contain;
+  > div {
+    img {
+      height: 38px;
+    }
   }
 }
 
