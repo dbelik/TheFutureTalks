@@ -76,6 +76,13 @@ blockquote.quote {
   color: $success;
 }
 
+.list-style-success {
+  list-style: url("/assets/imgs/icons/check.svg");
+  li {
+    padding-left: 5px;
+  }
+}
+
 @media (max-width: 767px) {
   .text-big {
     font-size: 2rem;
