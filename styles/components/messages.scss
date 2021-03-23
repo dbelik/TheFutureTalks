@@ -1,6 +1,7 @@
 .success-message,
 .primary-message,
-.success-white-message {
+.success-white-message,
+.danger-message {
     display: inline-block;
     font-size: $p3;
     border-radius: 1rem;
@@ -21,6 +22,11 @@
 .success-white-message {
   background-color: $white;
   color: $success;
+}
+
+.danger-message {
+  background-color: $danger-light;
+  color: $danger;
 }
 
 @media (max-width: 767px) {

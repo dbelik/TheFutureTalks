@@ -173,4 +173,42 @@
       }
     }
   }
+
+  &_event-tickets {
+    margin-top: 137px;
+
+    &_header {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    &_tickets-container {
+      margin-top: 67px;
+
+      > div {
+        max-width: 428px;
+        height: 464px;
+
+        > div {
+          background-color: $white;
+          border: 2px solid $grey-light-light;
+          padding: 52px 35px;
+
+          .danger-message {
+            position: absolute;
+            right: 20px;
+            top: 25px;
+          }
+
+          img {
+            width: 65px;
+            padding: 10px;
+            border-radius: 50%;
+            border: 2px solid $grey-light-light;
+            margin-bottom: 36px;
+          }
+        }
+      }
+    }
+  }
 }
