@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TheFutureTalks Conference | Home page</title>
   </head>
-  <body>
+  <body id="tft-body">
     <nav id="tft-navbar" class="fixed-top h-navbar bg-white">
       <div
         class="content-container d-flex align-items-center justify-content-between"
@@ -60,20 +60,33 @@
       </div>
     </nav>
 
-    <section
-      id="intro-section"
-      class="content-container"
-    >
-      <div class="content-container content-container-md content-container-sm row">
+    <section id="intro-section" class="content-container">
+      <div
+        class="content-container content-container-md content-container-sm row"
+      >
         <div class="col-12 col-md-8 col-xl-6">
-          <h1>TheFutureTalks Conference</h1>
-          <p class="mb-4">
+          <h1
+            data-scroll-trigger
+            data-scroll-trigger-id="intro-section"
+            data-scroll-trigger-speed=".05"
+          >
+            TheFutureTalks Conference
+          </h1>
+          <p
+            class="mb-4"
+            data-scroll-trigger
+            data-scroll-trigger-id="intro-section"
+            data-scroll-trigger-speed=".03"
+          >
             Event madness gathering innovators, startups & tech enthusiasts in
             Special Region of Yogyakarta
           </p>
           <div
             id="intro-section_links"
             class="pt-3 d-flex align-items-start justify-content-start flex-md-row flex-column"
+            data-scroll-trigger
+            data-scroll-trigger-id="intro-section"
+            data-scroll-trigger-speed=".02"
           >
             <div>
               <a class="primary-button mb-4 text-nowrap" href="/"
@@ -109,48 +122,92 @@
       id="sponsors-section"
       class="content-container content-container-md content-container-sm"
     >
-      <h3 class="mb-4">Sponsors of TheFutureTalks Conference</h3>
+      <h3
+        class="mb-4"
+        data-scroll-trigger
+        data-scroll-trigger-id="sponsors-section"
+        data-scroll-trigger-speed=".2"
+      >
+        Sponsors of TheFutureTalks Conference
+      </h3>
       <div class="row align-items-center justify-content-center mt-5">
         <img
           class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0"
           src="/assets/imgs/icons/slack.svg"
           alt="Slack"
+          data-scroll-trigger
+          data-scroll-trigger-id="sponsors-section"
+          data-scroll-trigger-speed=".1"
         />
         <img
           class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0"
           src="/assets/imgs/icons/netflix.svg"
           alt="Netflix"
+          data-scroll-trigger
+          data-scroll-trigger-id="sponsors-section"
+          data-scroll-trigger-speed=".15"
         />
         <img
           class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0"
           src="/assets/imgs/icons/fitbit.svg"
           alt="fitbit"
+          data-scroll-trigger
+          data-scroll-trigger-id="sponsors-section"
+          data-scroll-trigger-speed=".12"
         />
         <img
           class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0"
           src="/assets/imgs/icons/google.svg"
           alt="Google"
+          data-scroll-trigger
+          data-scroll-trigger-id="sponsors-section"
+          data-scroll-trigger-speed=".17"
         />
         <img
           class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0"
           src="/assets/imgs/icons/airbnb.svg"
           alt="airbnb"
+          data-scroll-trigger
+          data-scroll-trigger-id="sponsors-section"
+          data-scroll-trigger-speed=".11"
         />
         <img
           class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0"
           src="/assets/imgs/icons/uber.svg"
           alt="UBER"
+          data-scroll-trigger
+          data-scroll-trigger-id="sponsors-section"
+          data-scroll-trigger-speed=".19"
         />
       </div>
     </section>
 
     <section id="topics-section" class="content-container content-container-md">
       <div class="text-center text-md-left mb-5 mb-md-0">
-        <p class="success-message">OUR TOPICS</p>
-        <h2 class="text-dark">Conference Topics</h2>
+        <p
+          class="success-message"
+          data-scroll-trigger
+          data-scroll-trigger-id="topics-section"
+          data-scroll-trigger-speed=".2"
+        >
+          OUR TOPICS
+        </p>
+        <h2
+          class="text-dark"
+          data-scroll-trigger
+          data-scroll-trigger-id="topics-section"
+          data-scroll-trigger-speed=".18"
+        >
+          Conference Topics
+        </h2>
       </div>
       <div class="row">
-        <article class="col-12 col-xl-4 mb-5 mb-md-3 mb-xl-0">
+        <article
+          class="col-12 col-xl-4 mb-5 mb-md-3 mb-xl-0"
+          data-scroll-trigger
+          data-scroll-trigger-id="topics-section"
+          data-scroll-trigger-speed=".02"
+        >
           <div
             class="h-100 w-100 d-flex flex-column justify-content-end rounded-md"
           >
@@ -161,7 +218,12 @@
             ></a>
           </div>
         </article>
-        <article class="col-12 col-xl-4 mb-5 mb-md-3 mb-xl-0">
+        <article
+          class="col-12 col-xl-4 mb-5 mb-md-3 mb-xl-0"
+          data-scroll-trigger
+          data-scroll-trigger-id="topics-section"
+          data-scroll-trigger-speed=".02"
+        >
           <div
             class="h-100 w-100 d-flex flex-column justify-content-end rounded-md"
           >
@@ -172,7 +234,12 @@
             ></a>
           </div>
         </article>
-        <article class="col-12 col-xl-4">
+        <article
+          class="col-12 col-xl-4"
+          data-scroll-trigger
+          data-scroll-trigger-id="topics-section"
+          data-scroll-trigger-speed=".02"
+        >
           <div
             class="h-100 w-100 d-flex flex-column justify-content-end rounded-md"
           >
@@ -193,13 +260,28 @@
       class="content-container content-container-md text-center text-md-left"
     >
       <div id="quote-section_quote-symbol" class="text-primary">
-        <i class="fas fa-quote-left"></i>
+        <i
+          class="fas fa-quote-left"
+          data-scroll-trigger
+          data-scroll-trigger-id="quote-section"
+          data-scroll-trigger-speed=".2"
+        ></i>
       </div>
-      <blockquote>
+      <blockquote
+        data-scroll-trigger
+        data-scroll-trigger-id="quote-section"
+        data-scroll-trigger-speed=".18"
+      >
         “We belief was that if we kept putting great products in front of
         customers, they would continue to open their wallets."
       </blockquote>
-      <p>Steve Jobs, Apple</p>
+      <p
+        data-scroll-trigger
+        data-scroll-trigger-id="quote-section"
+        data-scroll-trigger-speed=".16"
+      >
+        Steve Jobs, Apple
+      </p>
     </section>
 
     <section id="talks-section" class="footer-bg">
@@ -208,14 +290,32 @@
         id="talks-section_speakers"
       >
         <div class="text-center text-md-left">
-          <p class="success-message">SPEAKERS</p>
-          <h2>TheFutureTalks Speakers</h2>
+          <p
+            class="success-message"
+            data-scroll-trigger
+            data-scroll-trigger-id="talks-section"
+            data-scroll-trigger-speed=".2"
+          >
+            SPEAKERS
+          </p>
+          <h2
+            data-scroll-trigger
+            data-scroll-trigger-id="talks-section"
+            data-scroll-trigger-speed=".16"
+          >
+            TheFutureTalks Speakers
+          </h2>
         </div>
         <div
           id="talks-section_speakers_list"
           class="row flex-column flex-md-row align-items-center"
         >
-          <div class="col-12 col-md-6 col-xl-3">
+          <div
+            class="col-12 col-md-6 col-xl-3"
+            data-scroll-trigger
+            data-scroll-trigger-id="talks-section"
+            data-scroll-trigger-speed=".02"
+          >
             <img
               class="rounded-sm"
               src="/assets/imgs/home/speakers/1.png"
@@ -227,7 +327,12 @@
               <li>Investor at Sebo Digital Ventures</li>
             </ul>
           </div>
-          <div class="col-12 col-md-6 col-xl-3">
+          <div
+            class="col-12 col-md-6 col-xl-3"
+            data-scroll-trigger
+            data-scroll-trigger-id="talks-section"
+            data-scroll-trigger-speed=".02"
+          >
             <img
               class="rounded-sm"
               src="/assets/imgs/home/speakers/2.png"
@@ -239,7 +344,12 @@
               <li>Co-founder at Slack</li>
             </ul>
           </div>
-          <div class="col-12 col-md-6 col-xl-3">
+          <div
+            class="col-12 col-md-6 col-xl-3"
+            data-scroll-trigger
+            data-scroll-trigger-id="talks-section"
+            data-scroll-trigger-speed=".02"
+          >
             <img
               class="rounded-sm"
               src="/assets/imgs/home/speakers/3.png"
@@ -251,7 +361,12 @@
               <li>Investor at Sebo Digital Ventures</li>
             </ul>
           </div>
-          <div class="col-12 col-md-6 col-xl-3">
+          <div
+            class="col-12 col-md-6 col-xl-3"
+            data-scroll-trigger
+            data-scroll-trigger-id="talks-section"
+            data-scroll-trigger-speed=".02"
+          >
             <img
               class="rounded-sm"
               src="/assets/imgs/home/speakers/4.png"
@@ -273,6 +388,9 @@
         <div
           id="talks-section_archive_video-container"
           class="overflow-hidden rounded-md"
+          data-scroll-trigger
+          data-scroll-trigger-id="talks-section_archive"
+          data-scroll-trigger-speed=".01"
         >
           <video
             class="rounded-md"
@@ -283,6 +401,9 @@
         <div
           id="talks-section_archive_archiver-container"
           class="rounded-md box-shadow-md"
+          data-scroll-trigger
+          data-scroll-trigger-id="talks-section_archive"
+          data-scroll-trigger-speed=".03"
         >
           <p class="primary-message p2">ARCHIVES</p>
           <h2>TheFutureTalks 2018</h2>
@@ -357,9 +478,27 @@
         id="talks-section_event-tickets"
       >
         <div id="talks-section_event-tickets_header" class="text-center">
-          <p class="success-message">EVENT TICKETS</p>
-          <h2>Grab you seat now fast!</h2>
-          <p class="p2">
+          <p
+            class="success-message"
+            data-scroll-trigger
+            data-scroll-trigger-id="talks-section_event-tickets"
+            data-scroll-trigger-speed=".2"
+          >
+            EVENT TICKETS
+          </p>
+          <h2
+            data-scroll-trigger
+            data-scroll-trigger-id="talks-section_event-tickets"
+            data-scroll-trigger-speed=".18"
+          >
+            Grab you seat now fast!
+          </h2>
+          <p
+            class="p2"
+            data-scroll-trigger
+            data-scroll-trigger-id="talks-section_event-tickets"
+            data-scroll-trigger-speed=".16"
+          >
             Tired of secretive bids? Our platform provides a transparent
             princing with the ability to submit custom offers.
           </p>
@@ -369,7 +508,12 @@
           id="talks-section_event-tickets_tickets-container"
           class="row justify-content-center flex-column flex-md-row align-items-center align-items-md-start"
         >
-          <div class="col mb-4 mb-md-0">
+          <div
+            class="col mb-4 mb-md-0"
+            data-scroll-trigger
+            data-scroll-trigger-id="talks-section_event-tickets_tickets-container"
+            data-scroll-trigger-speed=".03"
+          >
             <div
               class="h-100 w-100 rounded-md box-shadow-md d-flex flex-column justify-content-between align-items-start"
             >
@@ -386,7 +530,12 @@
               ></a>
             </div>
           </div>
-          <div class="col">
+          <div
+            class="col"
+            data-scroll-trigger
+            data-scroll-trigger-id="talks-section_event-tickets_tickets-container"
+            data-scroll-trigger-speed=".02"
+          >
             <div
               class="h-100 w-100 rounded-md box-shadow-md position-relative d-flex flex-column justify-content-between align-items-start"
             >
