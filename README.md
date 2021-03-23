@@ -1,7 +1,7 @@
 <h1 align="center">TheFutureTalks</h1>
 <p align="center"><i>Event madness gathering innovators, startups & tech enthusiasts in Special Region of Yogyakarta</i></p>
 <p align="center">
-  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
+  <a href="/LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT" /></a>
 </p>
 <hr>
 
