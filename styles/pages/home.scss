@@ -79,3 +79,20 @@
     }
   }
 }
+
+#quote-section {
+  margin-top: 160px;
+  max-width: 915px;
+  margin-bottom: 130px;
+
+  &_quote-symbol {
+    font-size: 40px;
+    margin-bottom: 14px;
+  }
+  
+  blockquote {
+    font-size: $h2;
+    line-height: 1.75;
+    margin-bottom: 10px;
+  }
+}
