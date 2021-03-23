@@ -12,7 +12,7 @@
         class="content-container d-flex align-items-center justify-content-between"
       >
         <img class="ehay-logo" src="/assets/imgs/icons/logo.svg" alt="Ehay" />
-        <button class="d-block d-xl-none">
+        <button id="tft-navbar_mobile-button" class="d-block d-xl-none">
           <svg width="30" height="24">
             <line
               x1="0"
@@ -41,7 +41,8 @@
           </svg>
         </button>
         <ul
-          class="align-items-center justify-content-end w-100 list-style-none m-0 d-none d-xl-flex"
+          id="tft-navbar_items"
+          class="align-items-center justify-content-xl-end w-xl-100 list-style-none m-0 d-flex flex-column flex-xl-row justify-content-center"
         >
           <li><a class="text-dark text-decoration-none" href="/">Home</a></li>
           <li>
@@ -97,15 +98,42 @@
       </div>
     </section>
 
-    <section id="sponsors-section" class="content-container content-container-md content-container-sm">
+    <section
+      id="sponsors-section"
+      class="content-container content-container-md content-container-sm"
+    >
       <h3 class="mb-4">Sponsors of TheFutureTalks Conference</h3>
       <div class="row align-items-center justify-content-center mt-5">
-        <img class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0" src="/assets/imgs/icons/slack.svg" alt="Slack">
-        <img class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0" src="/assets/imgs/icons/netflix.svg" alt="Netflix">
-        <img class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0" src="/assets/imgs/icons/fitbit.svg" alt="fitbit">
-        <img class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0" src="/assets/imgs/icons/google.svg" alt="Google">
-        <img class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0" src="/assets/imgs/icons/airbnb.svg" alt="airbnb">
-        <img class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0" src="/assets/imgs/icons/uber.svg" alt="UBER">
+        <img
+          class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0"
+          src="/assets/imgs/icons/slack.svg"
+          alt="Slack"
+        />
+        <img
+          class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0"
+          src="/assets/imgs/icons/netflix.svg"
+          alt="Netflix"
+        />
+        <img
+          class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0"
+          src="/assets/imgs/icons/fitbit.svg"
+          alt="fitbit"
+        />
+        <img
+          class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0"
+          src="/assets/imgs/icons/google.svg"
+          alt="Google"
+        />
+        <img
+          class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0"
+          src="/assets/imgs/icons/airbnb.svg"
+          alt="airbnb"
+        />
+        <img
+          class="col-6 col-md-4 col-xl-2 mb-4 mb-xl-0"
+          src="/assets/imgs/icons/uber.svg"
+          alt="UBER"
+        />
       </div>
     </section>
 
@@ -258,7 +286,9 @@
           <ul
             class="list-style-none d-flex align-items-center justify-content-start row"
           >
-            <li class="col-6 col-md-4 d-flex align-items-start justify-content-start">
+            <li
+              class="col-6 col-md-4 d-flex align-items-start justify-content-start"
+            >
               <span class="rounded-icon-success mt-2 mr-2"
                 ><i class="fas fa-check"></i
               ></span>
@@ -267,7 +297,9 @@
                 <p class="p2 mb-4">Visitors</p>
               </div>
             </li>
-            <li class="col-6 col-md-4 d-flex align-items-start justify-content-start">
+            <li
+              class="col-6 col-md-4 d-flex align-items-start justify-content-start"
+            >
               <span class="rounded-icon-success mt-2 mr-2"
                 ><i class="fas fa-check"></i
               ></span>
@@ -276,7 +308,9 @@
                 <p class="p2 mb-4">Startups</p>
               </div>
             </li>
-            <li class="col-6 col-md-4 d-flex align-items-start justify-content-start">
+            <li
+              class="col-6 col-md-4 d-flex align-items-start justify-content-start"
+            >
               <span class="rounded-icon-success mt-2 mr-2"
                 ><i class="fas fa-check"></i
               ></span>
@@ -285,7 +319,9 @@
                 <p class="p2 mb-4">Mentors</p>
               </div>
             </li>
-            <li class="col-6 col-md-4 d-flex align-items-start justify-content-start">
+            <li
+              class="col-6 col-md-4 d-flex align-items-start justify-content-start"
+            >
               <span class="rounded-icon-success mt-2 mr-2"
                 ><i class="fas fa-check"></i
               ></span>
@@ -294,7 +330,9 @@
                 <p class="p2 mb-0">Countries</p>
               </div>
             </li>
-            <li class="col-6 col-md-4 d-flex align-items-start justify-content-start">
+            <li
+              class="col-6 col-md-4 d-flex align-items-start justify-content-start"
+            >
               <span class="rounded-icon-success mt-2 mr-2"
                 ><i class="fas fa-check"></i
               ></span>
@@ -307,7 +345,10 @@
         </div>
       </div>
 
-      <div class="content-container content-container-md content-container-sm" id="talks-section_event-tickets">
+      <div
+        class="content-container content-container-md content-container-sm"
+        id="talks-section_event-tickets"
+      >
         <div id="talks-section_event-tickets_header" class="text-center">
           <p class="success-message">EVENT TICKETS</p>
           <h2>Grab you seat now fast!</h2>
@@ -363,14 +404,18 @@
 
     <footer id="tft-footer">
       <div class="content-container row pb-5 pb-md-0">
-        <div class="col-xl-3 col-md-4 col-12 order-last order-md-first mt-3 mt-md-0 text-center text-md-left">
+        <div
+          class="col-xl-3 col-md-4 col-12 order-last order-md-first mt-3 mt-md-0 text-center text-md-left"
+        >
           <img
             class="mb-4"
             src="/assets/imgs/icons/logo-white.svg"
             alt="Ehay"
           />
           <p class="p2">Build a modern and creative website with crealand</p>
-          <ul class="d-flex list-style-none mt-4 justify-content-center justify-content-md-start">
+          <ul
+            class="d-flex list-style-none mt-4 justify-content-center justify-content-md-start"
+          >
             <li>
               <a href=""><i class="fab fa-google"></i></a>
             </li>

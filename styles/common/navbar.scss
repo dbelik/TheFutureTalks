@@ -65,6 +65,11 @@ body {
     }
   }
 
+  button,
+  img {
+    z-index: 60;
+  }
+
   button {
     border: none;
     background-color: transparent;
@@ -73,8 +78,8 @@ body {
 }
 
 @media (min-width: 1200px) {
-  #navbar-items li {
-    opacity: 1 !important;
+  #tft-navbar_items {
+    clip-path: unset !important;
   }
 }
 
@@ -88,25 +93,24 @@ body {
     padding-top: $navbar-height;
   }
 
-  #navbar-items {
-    max-height: 0;
+  #tft-navbar_items {
     overflow: hidden;
     position: fixed;
-    top: $navbar-height;
+    top: 0;
     left: 0;
     width: 100vw;
-    height: calc(100vh - #{$navbar-height});
+    height: 100vh;
     background: $white;
-    z-index: 100;
+    z-index: 50;
+    clip-path: circle(27px at 95.66% 39px);
 
     li {
-      opacity: 0;
       text-align: center;
       margin: 10px 0;
       font-size: $h4;
 
       &:first-child {
-        margin-top: 50px;
+        margin-top: calc(-#{$navbar-height} / 2);
       }
 
       a {
@@ -118,20 +122,5 @@ body {
         font-size: $p2;
       }
     }
-  }
-}
-
-@media (max-width: 767px) {
-  $navbar-height: 64px;
-
-  .h-navbar {
-    height: $navbar-height;
-  }
-  body {
-    padding-top: $navbar-height;
-  }
-  #navbar-items {
-    top: $navbar-height;
-    height: calc(100vh - $navbar-height);
   }
 }
