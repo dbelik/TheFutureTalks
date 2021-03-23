@@ -221,6 +221,8 @@
 
 @media (max-width: 1199px) {
   #topics-section {
+    padding-top: 97px;
+    
     > div {
       height: auto;
 
@@ -228,6 +230,11 @@
         height: 360px;
       }
     }
+  }
+
+  #sponsors-section {
+    margin-top: 83px;
+    margin-bottom: 83px;
   }
 
   #quote-section {
@@ -346,8 +353,6 @@
   }
 
   #talks-section_event-tickets {
-    margin-top: 32px;
-
     &_tickets-container > div {
       height: 394px;
     }
