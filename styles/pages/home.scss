@@ -220,6 +220,10 @@
 }
 
 @media (max-width: 1199px) {
+  #intro-section h1 {
+    margin-top: 40px;
+  }
+
   #topics-section {
     padding-top: 97px;
 
@@ -294,6 +298,10 @@
 @media (max-width: 767px) {
   #intro-section {
     background: unset;
+
+    h1 {
+      margin-top: 0;
+    }
 
     &_links > div {
       &:last-child {
